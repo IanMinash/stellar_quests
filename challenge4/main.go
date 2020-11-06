@@ -72,7 +72,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	fmt.Printf("Transaction ID:\t%s\n", resp.ID)
+	fmt.Printf("SetOptions Transaction ID:\t%s\n", resp.ID)
 
 	seqNum, _ := sourceAccount.GetSequenceNumber()
 
@@ -103,5 +103,5 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	fmt.Printf("Transaction ID:\t%s\n", resp.ID)
+	fmt.Printf("BumpSequence Transaction ID:\t%s\n", resp.ID)
 }

@@ -74,7 +74,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	fmt.Printf("Transaction ID:\t%s\n", resp.ID)
+	fmt.Printf("ChangeTrust Transaction ID:\t%s\n", resp.ID)
 
 	// Get Issuer account
 	issuerRequest := horizonclient.AccountRequest{AccountID: issuerKp.Address()}
@@ -111,5 +111,5 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	fmt.Printf("Transaction ID:\t%s\n", resp.ID)
+	fmt.Printf("Asset Payment Transaction ID:\t%s\n", resp.ID)
 }

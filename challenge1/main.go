@@ -72,5 +72,5 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	fmt.Println(resp.Account)
+	fmt.Printf("Account %s successfully created.\n", resp.Account)
 }
